@@ -20,7 +20,7 @@ const PROFILE = {
   website: "https://v0id-iso.github.io/Portfolio/index.html#top",
   // Put a file named resume.pdf next to these HTML files and this link
   // will work automatically. Until then it just 404s harmlessly.
-  resumeUrl: "resume.pdf",
+  resumeUrl: "Resume.pdf",
   location: "New York, open to remote"
 };
 
