@@ -1,5 +1,5 @@
 /* Shared rendering helpers used by both index.html and projects.html.
-   No need to edit this file — edit data.js instead. */
+   No need to edit this file — edit data.jsinstead. */
 
 function el(tag, className, html){
   const e = document.createElement(tag);
