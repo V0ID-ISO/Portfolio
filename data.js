@@ -15,9 +15,9 @@ const PROFILE = {
   ],
   skills: ["TypeScript", "Python", "Go", "React", "PostgreSQL", "Docker", "AWS", "GraphQL"],
   email: "jadenkjob875@gmail.com",
-  linkedin: "https://linkedin.com/in/alexrivera",
-  github: "https://github.com/alexrivera",
-  website: "https://alexrivera.dev",
+  linkedin: "https://www.linkedin.com/in/jaden-job-561491329/",
+  github: "https://github.com/V0ID-ISO",
+  website: "https://v0id-iso.github.io/Portfolio/",
   // Put a file named resume.pdf next to these HTML files and this link
   // will work automatically. Until then it just 404s harmlessly.
   resumeUrl: "resume.pdf",
