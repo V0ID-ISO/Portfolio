@@ -8,7 +8,8 @@
 const PROFILE = {
   name: "Jaden Job",
   role: "Cybersecurity Scholar / WBL Extern",
-  tagline: "I build fast, reliable products end to end — from backend systems to the interfaces people actually touch. Currently focused on distributed systems and developer tooling.",
+  tagline: "my name is Jaden Job. I am a current student at SUNY Alfred State College earning my Bachelor’s in cybersecurity. Some of my skills include Critical Thinking, problem-solving, technical jargon, communication, and technical documentation. I am proud of making an Impact in the digital and physical world of the internet. I plan to begin as a SOC Analyst at a company and even start my own cybersecurity firm. 
+",
   bio: [
     "I'm a software engineer with 4+ years of experience shipping production systems, from greenfield APIs to large-scale refactors. I care most about code that's easy to delete, and products that feel instant.",
     "Outside of work I write about backend architecture, contribute to a couple of open-source tools, and am slowly making my way through every roguelike ever released."
