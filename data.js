@@ -6,15 +6,15 @@
 ========================================================================= */
 
 const PROFILE = {
-  name: "Alex Rivera",
-  role: "Software Engineer",
+  name: "Jaden Job",
+  role: "Cybersecurity Scholar / WBL Extern",
   tagline: "I build fast, reliable products end to end — from backend systems to the interfaces people actually touch. Currently focused on distributed systems and developer tooling.",
   bio: [
     "I'm a software engineer with 4+ years of experience shipping production systems, from greenfield APIs to large-scale refactors. I care most about code that's easy to delete, and products that feel instant.",
-    "Outside of work I write about backend architecture, contribute to a couple of open-source tools, and am slowly making my way through every roguelike ever released."
+    "Outside of work, I write about backend architecture, contribute to a couple of open-source tools, and am slowly making my way through every roguelike ever released."
   ],
   skills: ["TypeScript", "Python", "Go", "React", "PostgreSQL", "Docker", "AWS", "GraphQL"],
-  email: "alex.rivera@example.com",
+  email: "jadenkjob875@gmail.com",
   linkedin: "https://linkedin.com/in/alexrivera",
   github: "https://github.com/alexrivera",
   website: "https://alexrivera.dev",
