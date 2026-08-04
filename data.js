@@ -13,7 +13,7 @@ const PROFILE = {
     "I'm a software engineer with 4+ years of experience shipping production systems, from greenfield APIs to large-scale refactors. I care most about code that's easy to delete, and products that feel instant.",
     "Outside of work I write about backend architecture, contribute to a couple of open-source tools, and am slowly making my way through every roguelike ever released."
   ],
-  skills: ["TypeScript", "Python", "Go", "React", "PostgreSQL", "Docker", "AWS", "GraphQL"],
+  skills: ["Cybersecurity", "Python", "Software Development", "3D-Modeling", "3D-Printing", "Infomation Systems", "Technical Support", "Technical Documentation", "Problem Solving", "Ethical Hacking"],
   email: "jadenkjob875@gmail.com",
   linkedin: "https://www.linkedin.com/in/jaden-job-561491329/",
   github: "https://github.com/V0ID-ISO",
