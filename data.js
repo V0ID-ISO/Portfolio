@@ -192,9 +192,9 @@ const CAPSTONES = [
 ------------------------------------------------------------------------- */
 const EXPERIENCE = [
   {
-    role: "Security Analyst Intern",
-    company: "Example Corp",
-    dates: "Summer 2026",
+    role: "Tech Squad",
+    company: "Brooklyn STEAM Center",
+    dates: "Febuary 2026- June 2026",
     points: [
       "Monitored SIEM alerts and triaged incidents alongside the SOC team",
       "Ran vulnerability scans across internal systems and tracked remediation",
@@ -202,9 +202,9 @@ const EXPERIENCE = [
     ]
   },
   {
-    role: "IT Support Technician",
-    company: "University IT Services",
-    dates: "2024 – 2026",
+    role: "WorkED Extern ",
+    company: "WorkED",
+    dates: "July 2026 – August 2026",
     points: [
       "Resolved 30+ tickets a week covering hardware, network, and account issues",
       "Wrote internal documentation that cut average resolution time noticeably"
@@ -215,14 +215,20 @@ const EXPERIENCE = [
 
 const CERTIFICATIONS = [
   {
-    name: "CompTIA Security+",
-    issuer: "CompTIA",
-    date: "2026",
+    name: "Networking",
+    issuer: "Infomation Technology Specialist",
+    date: "2025",
     credentialUrl: "#"
   },
   {
-    name: "Google Cybersecurity Certificate",
-    issuer: "Coursera / Google",
+    name: "Networking Security",
+    issuer: "Infomation technology Specialist",
+    date: "2025",
+    credentialUrl: "#"
+  } 
+   {
+    name: "Cybersecurity",
+    issuer: "Infomation technology Specialist",
     date: "2025",
     credentialUrl: "#"
   }
