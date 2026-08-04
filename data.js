@@ -167,11 +167,11 @@ const BLOG_POSTS = [
 ------------------------------------------------------------------------- */
 const CAPSTONES = [
   {
-    title: "Secure File-Sharing Platform — Senior Capstone",
-    date: "2026",
-    stack: "React · Node.js · AES-256 · PostgreSQL",
+    title: "Implementation of an RFID-Based Access Control System — Senior Capstone",
+    date: "March 2026 - June 2026",
+    skils: "React · Node.js · AES-256 · PostgreSQL",
     coverImage: "https://placehold.co/900x420/11151d/6fb7ff?text=Capstone+Cover",
-    summary: "Designed and built an encrypted file-sharing web app as my senior capstone project, covering everything from threat modeling to deployment.",
+    summary: "Schools continue to explore new ways to improve security and attendance tracking systems. Traditional attendance methods are vulnerable to human error and inaccurate attendance records. The project focuses on developing an RFID-based attendance management system using a Raspberry Pi, an RFID scanner, and a web-based platform. The objective of the project is to improve the organization of attendance, accuracy, and security within the Brooklyn STEAM Center.",
     highlights: [
       "Threat-modeled the system before writing any code, covering auth, storage, and transit",
       "Implemented client-side AES-256 encryption so the server never sees plaintext files",
@@ -192,19 +192,19 @@ const CAPSTONES = [
 ------------------------------------------------------------------------- */
 const EXPERIENCE = [
   {
-    role: "Security Analyst Intern",
-    company: "Example Corp",
-    dates: "Summer 2026",
+    role: "Tech Squad",
+    company: "Brooklyn STEAM Center",
+    dates: "Febuary 2026 - June 2026",
     points: [
-      "Monitored SIEM alerts and triaged incidents alongside the SOC team",
-      "Ran vulnerability scans across internal systems and tracked remediation",
-      "Documented findings and presented a security awareness session to new hires"
+      "Fixed Broken devices around the Brooklyn STEAM Center and PS.46",
+      "Use of software skills to navigate through BIOS and terminal",
+      "Documented Completed Tickets for future reference"
     ]
   },
   {
-    role: "IT Support Technician",
-    company: "University IT Services",
-    dates: "2024 – 2026",
+    role: "WorkED Extern",
+    company: "WorkED",
+    dates: "July 2026 – August 2026",
     points: [
       "Resolved 30+ tickets a week covering hardware, network, and account issues",
       "Wrote internal documentation that cut average resolution time noticeably"
@@ -215,14 +215,14 @@ const EXPERIENCE = [
 
 const CERTIFICATIONS = [
   {
-    name: "CompTIA Security+",
-    issuer: "CompTIA",
-    date: "2026",
+    name: "Cybersecurity",
+    issuer: "Informational Technology Specialist ",
+    date: "Dec 2025",
     credentialUrl: "#"
   },
   {
-    name: "Google Cybersecurity Certificate",
-    issuer: "Coursera / Google",
+    name: "Network Security",
+    issuer: "Informational Technology Specialist",
     date: "2025",
     credentialUrl: "#"
   }
