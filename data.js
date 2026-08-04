@@ -6,18 +6,18 @@
 ========================================================================= */
 
 const PROFILE = {
-  name: "Alex Rivera",
-  role: "Software Engineer",
+  name: "Jaden Job",
+  role: "Cybersecurity Scholar / WBL Extern",
   tagline: "I build fast, reliable products end to end — from backend systems to the interfaces people actually touch. Currently focused on distributed systems and developer tooling.",
   bio: [
     "I'm a software engineer with 4+ years of experience shipping production systems, from greenfield APIs to large-scale refactors. I care most about code that's easy to delete, and products that feel instant.",
     "Outside of work I write about backend architecture, contribute to a couple of open-source tools, and am slowly making my way through every roguelike ever released."
   ],
-  skills: ["TypeScript", "Python", "Go", "React", "PostgreSQL", "Docker", "AWS", "GraphQL"],
-  email: "alex.rivera@example.com",
-  linkedin: "https://linkedin.com/in/alexrivera",
-  github: "https://github.com/alexrivera",
-  website: "https://alexrivera.dev",
+  skills: ["Cybersecurity", "Python", "Software Development", "3D-Modeling", "3D-Printing", "Information Systems", "Technical Support", "Technical Documentation", "Problem Solving", "Ethical Hacking"],
+  email: "jadenkjob875@gmail.com",
+  linkedin: "https://www.linkedin.com/in/jaden-job-561491329/",
+  github: "https://github.com/V0ID-ISO",
+  website: "https://v0id-iso.github.io/Portfolio/index.html#top",
   // Put a file named resume.pdf next to these HTML files and this link
   // will work automatically. Until then it just 404s harmlessly.
   resumeUrl: "resume.pdf",
