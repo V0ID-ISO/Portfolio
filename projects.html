@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Alex Rivera</title>
+<meta name="description" content="Projects by Alex Rivera, Software Engineer">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="editor">
+
+  <div class="titlebar">
+    <div class="dots"><span></span><span></span><span></span></div>
+    <div class="tabs">
+      <a href="index.html#top" class="tab"><span class="dot"></span>index.html</a>
+      <a href="projects.html" class="tab active"><span class="dot"></span>projects.tsx</a>
+      <a href="index.html#achievements" class="tab"><span class="dot"></span>achievements.log</a>
+      <a href="index.html#contact" class="tab"><span class="dot"></span>contact.sh</a>
+    </div>
+    <div class="quick-links">
+      <a data-profile="resumeUrl" target="_blank" rel="noopener">résumé <span class="arrow">↓</span></a>
+      <a data-profile="linkedin" target="_blank" rel="noopener">LinkedIn <span class="arrow">↗</span></a>
+      <a data-profile="github" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
+    </div>
+  </div>
+
+  <div class="code-body">
+    <div class="gutter" id="gutter" aria-hidden="true"></div>
+
+    <div class="content" id="content">
+
+      <section id="projects-top">
+        <p class="eyebrow"><span class="punc">## </span>projects</p>
+        <div class="page-heading">
+          <h1>Things I've built</h1>
+          <p>A mix of work projects and side projects — production systems, internal tools, and the occasional weekend build. Add more anytime by editing <code>data.js</code>.</p>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<footer>built with plain HTML/CSS/JS · no framework, no tracking</footer>
+
+<script src="data.js"></script>
+<script src="site.js"></script>
+<script>
+  applyProfile();
+  renderProjectCards(document.getElementById('project-grid'), PROJECTS);
+  renderGutter();
+</script>
+
+</body>
+</html>
