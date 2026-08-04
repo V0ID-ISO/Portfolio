@@ -55,9 +55,14 @@ function setupScrollSpy(sectionIds){
   sections.forEach(s => io.observe(s));
 }
 
+function slugify(text){
+  return String(text).toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+}
+
 function renderProjectCards(container, projects){
   projects.forEach(p => {
     const card = el('div', 'card');
+    card.id = slugify(p.name);
     card.innerHTML = `
       <div class="card-top">
         <h3>${p.name}</h3>
@@ -83,6 +88,103 @@ function renderAchievementItems(container, achievements){
       <p class="t-desc">${a.description}</p>
     `;
     container.appendChild(item);
+  });
+}
+
+function renderBlogPosts(container, posts){
+  posts.forEach(post => {
+    const details = el('details', 'post-card');
+    const tags = (post.tags || []).map(t => `<span class="tag">${t}</span>`).join('');
+    const steps = (post.steps || []).map(s => `
+      <div class="step">
+        <h4>${s.title}</h4>
+        ${s.image ? `<img class="step-img" src="${s.image}" alt="${s.title}" loading="lazy">` : ''}
+        <p>${s.description}</p>
+      </div>
+    `).join('');
+    details.innerHTML = `
+      <img class="cover-img" src="${post.coverImage}" alt="${post.title}" loading="lazy">
+      <summary>
+        <div class="post-heading">
+          <h3>${post.title}</h3>
+          <span class="post-date">${post.date}</span>
+        </div>
+        <div class="tag-cloud">${tags}</div>
+        <p class="post-summary">${post.summary}</p>
+        <span class="expand-hint">View full walkthrough ▸</span>
+      </summary>
+      <div class="steps">${steps}</div>
+    `;
+    container.appendChild(details);
+  });
+}
+
+function renderCapstones(container, capstones){
+  capstones.forEach(c => {
+    const card = el('div', 'capstone-card');
+    const highlights = (c.highlights || []).map(h => `<li>${h}</li>`).join('');
+    const gallery = (c.gallery || []).map(src => `<img src="${src}" alt="${c.title} screenshot" loading="lazy">`).join('');
+    const links = [];
+    if (c.links && c.links.writeup) links.push(`<a href="${c.links.writeup}" target="_blank" rel="noopener">Write-up →</a>`);
+    if (c.links && c.links.code) links.push(`<a href="${c.links.code}" target="_blank" rel="noopener">Source →</a>`);
+    card.innerHTML = `
+      <img class="cover-img" src="${c.coverImage}" alt="${c.title}" loading="lazy">
+      <div class="post-heading">
+        <h3>${c.title}</h3>
+        <span class="post-date">${c.date}</span>
+      </div>
+      <div class="stack">${c.stack}</div>
+      <p>${c.summary}</p>
+      ${highlights ? `<ul class="highlight-list">${highlights}</ul>` : ''}
+      ${gallery ? `<div class="gallery">${gallery}</div>` : ''}
+      ${links.length ? `<div class="links">${links.join('')}</div>` : ''}
+    `;
+    container.appendChild(card);
+  });
+}
+
+function renderExperience(container, items){
+  items.forEach(job => {
+    const item = el('div', 't-item exp-item');
+    const points = (job.points || []).map(p => `<li>${p}</li>`).join('');
+    item.innerHTML = `
+      <div class="t-date">${job.dates}</div>
+      <div class="t-title">${job.role} · ${job.company}</div>
+      <ul>${points}</ul>
+    `;
+    container.appendChild(item);
+  });
+}
+
+function renderCertifications(container, certs){
+  certs.forEach(cert => {
+    const card = el('div', 'cert-card');
+    card.innerHTML = `
+      <h3>${cert.name}</h3>
+      <div class="stack">${cert.issuer} · ${cert.date}</div>
+      ${cert.credentialUrl && cert.credentialUrl !== '#' ? `<a href="${cert.credentialUrl}" target="_blank" rel="noopener">View credential →</a>` : ''}
+    `;
+    container.appendChild(card);
+  });
+}
+
+function renderProjectsByCategory(container, projects){
+  const groups = {};
+  projects.forEach(p => {
+    const cat = p.category || 'Other';
+    if (!groups[cat]) groups[cat] = [];
+    groups[cat].push(p);
+  });
+  Object.keys(groups).forEach(cat => {
+    const block = el('div', 'category-block');
+    const links = groups[cat].map(p =>
+      `<a href="projects.html#${slugify(p.name)}">${p.name}</a>`
+    ).join('');
+    block.innerHTML = `
+      <div class="category-title">${cat}</div>
+      <div class="project-link-list">${links}</div>
+    `;
+    container.appendChild(block);
   });
 }
 

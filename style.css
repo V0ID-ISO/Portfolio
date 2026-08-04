@@ -239,4 +239,79 @@ h1,h2,h3{ font-family:var(--mono); font-weight:700; margin:0; letter-spacing:-0.
 }
 .contact-links a:hover{ color:var(--blue); border-color:var(--blue); }
 
+/* ---------- Images ---------- */
+.cover-img{
+  width:100%; max-height:340px; object-fit:cover;
+  border-radius:8px; border:1px solid var(--line); display:block; margin-bottom:14px;
+}
+.step-img{
+  width:100%; max-height:280px; object-fit:cover;
+  border-radius:8px; border:1px solid var(--line); display:block; margin:8px 0 10px;
+}
+.gallery{ display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:10px; margin-top:14px; }
+.gallery img{ width:100%; height:110px; object-fit:cover; border-radius:6px; border:1px solid var(--line); }
+
+/* ---------- Blog post cards (details/summary) ---------- */
+.post-card{
+  background:var(--panel-2); border:1px solid var(--line); border-radius:var(--radius);
+  padding:22px; margin-bottom:22px;
+}
+.post-card:last-child{ margin-bottom:0; }
+.post-card summary{ cursor:pointer; list-style:none; }
+.post-card summary::-webkit-details-marker{ display:none; }
+.post-heading{ display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap; }
+.post-heading h3{ font-size:18px; color:var(--text-hi); }
+.post-date{ font-family:var(--mono); font-size:11.5px; color:var(--text-dim); white-space:nowrap; }
+.post-summary{ color:var(--text-lo); font-size:14.5px; margin:10px 0 4px; }
+.tag-cloud{ display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+.expand-hint{
+  display:inline-block; margin-top:10px; font-family:var(--mono); font-size:12px; color:var(--blue);
+}
+.post-card[open] .expand-hint{ display:none; }
+.steps{ margin-top:18px; padding-top:18px; border-top:1px solid var(--line); }
+.step{ margin-bottom:22px; }
+.step:last-child{ margin-bottom:0; }
+.step h4{ font-family:var(--mono); font-size:14px; color:var(--green); margin:0 0 4px; }
+.step p{ color:var(--text-lo); font-size:14px; margin:0; }
+
+/* ---------- Capstone cards ---------- */
+.capstone-card{
+  background:var(--panel-2); border:1px solid var(--line); border-radius:var(--radius);
+  padding:22px; margin-bottom:22px;
+}
+.capstone-card:last-child{ margin-bottom:0; }
+.capstone-card .stack{ margin:6px 0 10px; }
+.capstone-card p{ color:var(--text-lo); font-size:14.5px; }
+.highlight-list{ margin:10px 0 0; padding-left:18px; color:var(--text-lo); font-size:14px; }
+.highlight-list li{ margin-bottom:4px; }
+.capstone-card .links{ display:flex; gap:14px; margin-top:14px; }
+.capstone-card .links a{ font-family:var(--mono); font-size:12.5px; color:var(--green); text-decoration:none; }
+.capstone-card .links a:hover{ text-decoration:underline; }
+
+/* ---------- Experience (extends .timeline / .t-item) ---------- */
+.exp-item ul{ margin:8px 0 0; padding-left:18px; color:var(--text-lo); font-size:14px; }
+.exp-item li{ margin-bottom:4px; }
+
+/* ---------- Certifications ---------- */
+.cert-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
+.cert-card{ background:var(--panel-2); border:1px solid var(--line); border-radius:var(--radius); padding:18px; }
+.cert-card h3{ font-size:15px; color:var(--text-hi); margin-bottom:6px; }
+.cert-card .stack{ margin-bottom:8px; }
+.cert-card a{ font-family:var(--mono); font-size:12.5px; color:var(--green); text-decoration:none; }
+.cert-card a:hover{ text-decoration:underline; }
+
+/* ---------- Projects grouped by category (enterprise page) ---------- */
+.category-block{ margin-bottom:24px; }
+.category-block:last-child{ margin-bottom:0; }
+.category-title{
+  font-family:var(--mono); font-size:12.5px; color:var(--pink);
+  text-transform:uppercase; letter-spacing:.07em; margin-bottom:10px;
+}
+.project-link-list{ display:flex; flex-direction:column; gap:8px; }
+.project-link-list a{
+  font-family:var(--mono); font-size:14px; color:var(--text-hi); text-decoration:none;
+  border-bottom:1px solid transparent; width:fit-content;
+}
+.project-link-list a:hover{ color:var(--blue); border-color:var(--blue); }
+
 footer{ text-align:center; font-family:var(--mono); font-size:11.5px; color:var(--text-dim); padding:24px 10px 40px; }

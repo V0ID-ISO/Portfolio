@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projects — Alex Rivera</title>
-<meta name="description" content="Projects by Alex Rivera, Software Engineer">
+<title>Cybersecurity Blog — Alex Rivera</title>
+<meta name="description" content="Cybersecurity project write-ups by Alex Rivera">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,8 +18,8 @@
     <div class="dots"><span></span><span></span><span></span></div>
     <div class="tabs">
       <a href="index.html#top" class="tab"><span class="dot"></span>index.html</a>
-      <a href="projects.html" class="tab active"><span class="dot"></span>projects.tsx</a>
-      <a href="blog.html" class="tab"><span class="dot"></span>blog.md</a>
+      <a href="projects.html" class="tab"><span class="dot"></span>projects.tsx</a>
+      <a href="blog.html" class="tab active"><span class="dot"></span>blog.md</a>
       <a href="capstones.html" class="tab"><span class="dot"></span>capstones.tsx</a>
       <a href="enterprise.html" class="tab"><span class="dot"></span>enterprise.json</a>
       <a href="index.html#contact" class="tab"><span class="dot"></span>contact.sh</a>
@@ -36,13 +36,13 @@
 
     <div class="content" id="content">
 
-      <section id="projects-top">
-        <p class="eyebrow"><span class="punc">## </span>projects</p>
+      <section id="blog-top">
+        <p class="eyebrow"><span class="punc">## </span>cybersecurity_blog</p>
         <div class="page-heading">
-          <h1>Things I've built</h1>
-          <p>A mix of work projects and side projects — production systems, internal tools, and the occasional weekend build. Add more anytime by editing <code>data.js</code>.</p>
+          <h1>Cybersecurity Blog</h1>
+          <p>Write-ups of labs and projects I've worked through — click a post to expand the full step-by-step walkthrough with screenshots. Edit <code>data.js</code> to add new posts.</p>
         </div>
-        <div class="project-grid" id="project-grid"></div>
+        <div id="blog-posts"></div>
       </section>
 
     </div>
@@ -55,7 +55,7 @@
 <script src="site.js"></script>
 <script>
   applyProfile();
-  renderProjectCards(document.getElementById('project-grid'), PROJECTS);
+  renderBlogPosts(document.getElementById('blog-posts'), BLOG_POSTS);
   renderGutter();
 </script>
 
