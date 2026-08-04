@@ -14,7 +14,7 @@ const PROFILE = {
     "Outside of work I write about backend architecture, contribute to a couple of open-source tools, and am slowly making my way through every roguelike ever released."
   ],
   skills: ["TypeScript", "Python", "Go", "React", "PostgreSQL", "Docker", "AWS", "GraphQL"],
-  email: "jadenkjob875",
+  email: "jadenkjob875@gmail.com",
   linkedin: "https://www.linkedin.com/in/jaden-job-561491329/",
   github: "https://github.com/alexrivera",
   website: "https://alexrivera.dev",
