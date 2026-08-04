@@ -226,12 +226,6 @@ const CERTIFICATIONS = [
     date: "2025",
     credentialUrl: "#"
   } 
-   {
-    name: "Cybersecurity",
-    issuer: "Infomation technology Specialist",
-    date: "2025",
-    credentialUrl: "#"
-  }
   // Add more the same way. Set credentialUrl to "#" if you don't have a
   // public verification link yet.
 ];
