@@ -182,7 +182,7 @@ const CAPSTONES = [
       "https://placehold.co/400x260/11151d/f0a3d0?text=Screenshot+2",
       "https://placehold.co/400x260/11151d/ffcb6b?text=Screenshot+3"
     ],
-    links: { writeup: "Docs/20028 - Implementation of a Secure RFID-Based Access Control System.pdf", code: "#" }
+    links: { writeup: "Docs/20028 - Implementation of a Secure RFID-Based Access Control System.pdf", code: "https://drive.google.com/drive/folders/1Qj3bXn3wzY1tRg9DCzHMKxVNszKKQWCj?usp=sharing" }
   }
   // Add more capstones by copying the object above and editing it.
 ];
