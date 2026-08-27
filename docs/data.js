@@ -170,7 +170,7 @@ const CAPSTONES = [
     title: "Implementation of an RFID-Based Access Control System — Senior Capstone",
     date: "March 2026 - June 2026",
     skills: "React · Node.js · AES-256 · PostgreSQL",
-    coverImage: "images/STEAM - Cap/Title.png",
+    coverImage: "images/STEAM/Title.png",
     summary: "Schools continue to explore new ways to improve security and attendance tracking systems. Traditional attendance methods are vulnerable to human error and inaccurate attendance records. The project focuses on developing an RFID-based attendance management system using a Raspberry Pi, an RFID scanner, and a web-based platform. The objective of the project is to improve the organization of attendance, accuracy, and security within the Brooklyn STEAM Center.",
     highlights: [
       "Threat-modeled the system before writing any code, covering auth, storage, and transit",
