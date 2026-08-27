@@ -7,7 +7,7 @@
 
 const PROFILE = {
   name: "Jaden Job",
-  role: "Cybersecurity Scholar / WBL Extern",
+  role: "Cybersecurity Scholar / Work-Based Learning Extern",
   tagline: "I build fast, reliable products end to end — from backend systems to the interfaces people actually touch. Currently focused on distributed systems and developer tooling.",
   bio: [
     "I'm a software engineer with 4+ years of experience shipping production systems, from greenfield APIs to large-scale refactors. I care most about code that's easy to delete, and products that feel instant.",
