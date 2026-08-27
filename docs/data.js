@@ -225,9 +225,9 @@ const CERTIFICATIONS = [
     issuer: "Informational Technology Specialist",
     date: "2025",
     credentialUrl: "#"
-  }
+  },
   {
-    name: "Network",
+    name: "Networking",
     issuer: "Informational Technology Specialist",
     date: "2025",
     credentialUrl: "#"
